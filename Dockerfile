@@ -1,5 +1,5 @@
 FROM python:3-alpine3.8
-RUN apk --update --no-cache add bash curl wget make gcc g++
+RUN apk --update --no-cache add bash curl git ssh make gcc g++
 ENV SHELL=/bin/bash
 RUN pip install --upgrade pip setuptools awscli
 RUN rm -r /root/.cache
