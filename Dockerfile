@@ -7,7 +7,7 @@ RUN rm -r /root/.cache
 RUN mkdir .kube
 RUN curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.7/2020-07-08/bin/darwin/amd64/kubectl
 RUN curl -O -L https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv3.8.0/kustomize_v3.8.0_linux_amd64.tar.gz
-RUN tar -zxvf kustomize_v3.5.5_linux_amd64.tar.gz
+RUN tar -zxvf kustomize_v3.8.0_linux_amd64.tar.gz
 
 RUN chmod +x ./kubectl
 RUN chmod +x ./kustomize
